@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt</title>
+    <style>
+      h1 {
+        text-align: center;
+        border: 1px solid white;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 4px;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+      }
+      h2 {
+        text-align: center;
+        color: white;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+      }
+      body {
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      p {
+        text-align: left;
+        color: white;
+        font-size: 25px;
+
+        line-height: 40px;
+      }
+      button {
+        display: block;
+        margin: 30px auto;
+        background-color: rgb(1, 20, 15);
+        padding: 10px 20px;
+        color: white;
+        font-size: 40px;
+        border-radius: 4px;
+        box-shadow: 0 1px 20px rgb(0 0 0 / 50%);
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: rgb(2, 44, 33);
+      }
+
+      div {
+        background: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+        border-radius: 15px;
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        padding: 30px;
+      }
+      a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>I Love Yogurt</h1>
+      <h2>Especially Greek Yogurts</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/020/715/original/shecodesimg.jpg?1636381903"
+        alt="Greek Yogurts"
+        width="300"
+      />
+      <hr />
+      <p>
+        <strong>Greek yogurt </strong> is a yogurt that has been strained to remove most of its
+        whey, resulting in a thicker consistency than unstrained yogurt, while
+        preserving yogurt's distinctive sour taste. Like many types of yogurt,
+        strained yogurt is often made from milk that has been enriched by
+        boiling off some of its water content, or by adding extra butterfat and
+        powdered milk. In Europe and North America, it is often made with
+        low-fat or fat-free yogurt. In Iceland a similar product named
+        <em>skyr</em> is produced.
+        <br />
+      </p>
+      <small
+        ><a href="https://en.wikipedia.org/wiki/Strained_yogurt"
+          >Read on Wikipedia</a
+        ></small
+      >
+      <br />
+      <button class="button">TRY GREEK YOGURT</button>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("what is your name?"); 
+        if (name) {
+      alert('Thanks,' + name + ' we will be in touch. Meanwhile, have alot of Yogurt!')
+    } else {alert ('No name, no Greek Yogurt for you!')}
+      }
+      let button = document.querySelector(".button");
+      button.addEventListener("click", buy);
+        
+    </script
+    <br />
+    >
+  </body>
+</html>
